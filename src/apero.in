@@ -1,0 +1,15 @@
+#!@GJS@ -m
+
+import { exit, programArgs } from "system";
+
+imports.package.init({
+  name: "@APP_ID@",
+  version: "@VERSION@",
+  prefix: "@prefix@",
+  libdir: "@libdir@",
+  datadir: "@datadir@",
+});
+
+const module = await import("resource://@resource_path@/main.js");
+const exitCode = await module.main(programArgs);
+exit(exitCode);

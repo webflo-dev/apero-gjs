@@ -1,0 +1,9 @@
+[*]
+indent_style = tab
+indent_size = 2
+
+[javascript]
+quote_style = single
+
+[*.{xml,ui}]
+indent_size = 2

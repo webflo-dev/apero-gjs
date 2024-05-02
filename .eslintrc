@@ -1,0 +1,47 @@
+{
+	"root": true,
+	"env": {
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"ignorePatterns": [
+		"types/",
+		"_build/",
+		"build/",
+		"result/"
+	],
+	"globals": {
+		"pkg": "readonly",
+		"ARGV": "readonly",
+		"Debugger": "readonly",
+		"GIRepositoryGType": "readonly",
+		"globalThis": "readonly",
+		"imports": "readonly",
+		"Intl": "readonly",
+		"log": "readonly",
+		"logError": "readonly",
+		"print": "readonly",
+		"printerr": "readonly",
+		"window": "readonly",
+		"TextEncoder": "readonly",
+		"TextDecoder": "readonly",
+		"console": "readonly",
+		"setTimeout": "readonly",
+		"setInterval": "readonly",
+		"clearTimeout": "readonly",
+		"clearInterval": "readonly"
+	},
+	"rules": {}
+}
